@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #f7f7f7;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+header h1 {
+  text-transform: uppercase;
+}
+
+.navbar-nav .nav-link {
+  color: #000;
+  text-transform: uppercase;
+}
+
+.navbar-nav .nav-link.active {
+  background-color: #000;
+  transition: 0.8s;
+  color: #fff;
+}
+
+.navbar-nav .nav-link.active:hover {
+  background-color: #585656;
+}
+
+.sobre {
+  margin-top: 20px;
+}
+
+.container-2 {
+  background-color: #585656;
+  padding: 50px 0;
+  margin: 30px 0;
+}
+
+.card {
+  z-index: 0;
+  margin-top: 30px;
+}
+
+.card img {
+  display: block;
+}
+
+#games h2 {
+  color: #fff;
+  text-transform: uppercase;
+  justify-self: center;
+  margin-top: 60px;
+}
+
+#promo h2 {
+  text-transform: uppercase;
+  justify-self: center;
+}
+
+#contato h2 {
+  color: #fff;
+  padding-top: 40px;
+}
+
+form {
+  width: 500px;
+  color: #fff;
+  padding-bottom: 50px;
+}
+
+form textarea {
+  height: 150px;
+  resize: none;
+}
+
+footer {
+  background-color: #000;
+  padding: 30px 0px 20px 0px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+.layout-footer {
+  align-items: content;
+  display: flex;
+  justify-content: center;
+}
+
+.layout-footer p {
+  font-size: 16px;
+}
+
+footer .layout-footer img {
+  height: 30px;
+  margin-left: 10px;
+  display: block;
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
+}

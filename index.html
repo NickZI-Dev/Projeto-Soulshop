@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soulshop</title>
+  <link rel="stylesheet" href="./lib/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="./icon/soulshop-icon.png" type="image/x-icon">
+</head>
+
+<body>
+
+
+  <header id="header-scroll">
+
+    <div class="container">
+
+      <div class="navbar navbar-expand-md">
+
+        <h1>Soulshop</h1>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <nav id="menu" class="collapse navbar-collapse text-center justify-content-end pt-2">
+          <ul class="nav navbar-nav nav-pills">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#games" class="nav-link">Games</a>
+            </li>
+            <li class="nav-item">
+              <a href="#promo" class="nav-link">Promoções</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contato" class="nav-link">Contato</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- Carousel mostrando as imagens dos jogos -->
+
+    <div data-bs-spy="scroll" data-bs-target="#header-scroll">
+
+      <div class="container" id="home">
+
+        <div class="carousel slide" data-bs-ride="carousel" id="btn-carousel">
+
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+
+              <img src="./img/Dark-souls-3.jpg" alt="" class="d-block w-100">
+
+              <div class="carousel-caption">
+                <button type="button" class="btn btn-danger esgotado">Esgotado!</button>
+              </div>
+
+            </div>
+
+            <div class="carousel-item" data-bs-interval="3000">
+
+              <img src="./img/TW3-wild-hunte_resized.png" alt="" class="d-block w-100">
+
+              <div class="carousel-caption">
+
+                <button class="btn btn-success">
+                  <a href="#games">Ver mais</a>
+                </button>
+
+              </div>
+
+            </div>
+
+            <div class="carousel-item" data-bs-interval="3000">
+
+              <img src="./img/SILENT-HILL-2_resized.png" alt="" class="d-block w-100">
+
+              <div class="carousel-caption">
+
+                <button class="btn btn-success">
+                  <a href="#games">Ver mais</a>
+                </button>
+
+              </div>
+
+            </div>
+
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="./img/devil-may-cry-5_resized.jpg" alt="jogo-devil-may-cry" class="d-block w-100">
+
+              <div class="carousel-caption">
+
+                <button class="btn btn-success">
+                  <a href="#promo">Ver mais</a>
+                </button>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Os botões presentes no carousel -->
+
+          <button class="carousel-control-next" data-bs-target="#btn-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+
+          <button class="carousel-control-prev" data-bs-target="#btn-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <div class="carousel-indicators">
+            <button class="active" data-bs-target="#btn-carousel" data-bs-slide-to="0"></button>
+            <button data-bs-target="#btn-carousel" data-bs-slide-to="1"></button>
+            <button data-bs-target="#btn-carousel" data-bs-slide-to="2"></button>
+            <button data-bs-target="#btn-carousel" data-bs-slide-to="3"></button>
+          </div>
+
+        </div>
+
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+          <div class="toast" id="mensagem-toast">
+            <header class="toast-header justify-content-between">
+              <strong>Mensagem importante</strong>
+              <button class="btn-close" data-bs-dismiss="toast"></button>
+            </header>
+            <div class="toast-body">
+              <p>O produto selecionado não está mais em estoque.</p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <section class="sobre">
+          <div class="row">
+
+            <div class="col-lg-6 col-sm-12 text-end">
+              <img src="https://dummyimage.com/500x400" alt="" class="d-block w-100">
+            </div>
+
+            <div class="col-lg-6 col-sm-12 align-content-center">
+
+              <h2>Sobre nossa loja</h2>
+
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt libero ratione, veniam iste voluptatem laborum quod non, cupiditate, facere beatae eaque unde est tenetur quasi reprehenderit eligendi. Rerum, quaerat assumenda?</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ipsum vel officiis voluptatum aperiam expedita nobis aspernatur nihil praesentium, optio corporis non laudantium natus consequuntur ut ipsam ex repellendus id.</p>
+
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+
+
+      <div class="container-2">
+
+        <div class="container">
+
+          <div id="games">
+
+            <h2>Games</h2>
+
+            <div class="row">
+
+              <div class="col-lg-4 col-md-6">
+
+                <div class="card">
+
+                  <header class="card-header">
+                    <h3>Crash Bandicoot</h3>
+                  </header>
+
+                  <img src="./img/crash-bandicoot.jpg" alt="">
+
+                  <div class="card-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quis reprehenderit, quidem dolorem eum quaerat qui nulla harum possimus reiciendis delectus, laboriosam nobis nihil expedita officiis hic quam animi quibusdam!</p>
+                  </div>
+
+                  <footer class="card-footer">
+                    <button class="btn btn-success adicionar">Adicionar ao Carrinho</button>
+                  </footer>
+
+                </div>
+
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+
+                <div class="card">
+
+                  <header class="card-header">
+                    <h3>Silent Hills 2 Remake</h3>
+                  </header>
+
+                  <img src="./img/SILENT-HILL-2_resized.png" alt="">
+
+                  <div class="card-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et praesentium dignissimos, qui exercitationem asperiores velit nihil culpa accusamus voluptatem eum quisquam itaque ea mollitia omnis pariatur suscipit, quos dolorem possimus.</p>
+                  </div>
+
+                  <footer class="card-footer">
+                    <button class="btn btn-success adicionar">Adicionar ao Carrinho</button>
+                  </footer>
+
+                </div>
+
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+
+                <div class="card">
+
+                  <header class="card-header">
+                    <h3>The Witcher 3 - Wild Hunt</h3>
+                  </header>
+
+                  <img src="./img/TW3-wild-hunte_resized.png" alt="">
+
+                  <div class="card-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque hic asperiores nemo a aspernatur alias error at. Non, laboriosam unde? Error eveniet blanditiis aperiam dolore aut adipisci in, neque inventore!</p>
+                  </div>
+
+                  <footer class="card-footer">
+                    <button class="btn btn-success adicionar">Adicionar ao carrinho</button>
+                  </footer>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="container">
+
+        <div id="promo">
+
+          <h2>Promoções da semana</h2>
+
+          <div class="row">
+
+            <div class="col-lg-4 col-md-6">
+
+              <div class="card">
+
+                <header class="card-header">
+                  <h3>Devil may cry 5</h3>
+                </header>
+
+                <img src="./img/devil-may-cry-5_resized.jpg" alt="">
+
+                <div class="card-body">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ex optio odit quibusdam voluptates eaque libero ducimus eos quis quae aut ut ab, quos corporis distinctio ipsa qui odio! Tempore.</p>
+                </div>
+
+                <footer class="card-footer">
+                  <button class="btn btn-success adicionar">Adicionar ao carrinho</button>
+                </footer>
+
+              </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+              <div class="card">
+
+                <header class="card-header">
+                  <h3>Amnesia The dark descent</h3>
+                </header>
+
+                <img src="./img/Amnesia-The-Dark-Descent-.png" alt="">
+                
+                <div class="card-body">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aspernatur officiis ab cum at dolorum, excepturi molestiae, sit id ullam beatae labore quam architecto hic repellat iusto porro ratione perspiciatis?</p>
+                </div>
+
+                <footer class="card-footer">
+                  <button class="btn btn-success adicionar">Adicionar ao carrinho</button>
+                </footer>
+
+              </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+              <div class="card">
+
+                <header class="card-header">
+                  <h3>Dark Souls 3</h3>
+                </header>
+
+                <img src="./img/Dark-souls-3.jpg" alt="">
+
+                <div class="card-body">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum culpa cupiditate dolorum illo odit, nobis quaerat? Distinctio neque, aliquam est quo, eos unde, nihil aliquid qui quasi soluta sunt voluptatum.</p>
+                </div>
+
+                <footer class="card-footer">
+                  <button class="btn btn-success adicionar">Adicionar ao carrinho</button>
+                </footer>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Aba de contatos -->
+
+      <!-- Coloquei um container-2 para mudar a cor de fundo -->
+    
+      <div class="container-2 mb-0 pb-10" id="contato">
+
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col">
+
+              <h2>Entre em contato</h2>
+
+              <form>
+
+                <label class="form-label" for="nome">Seu nome:</label>
+                <input class="form-control" type="text" id="nome">
+
+                <label for="email" class="form-label">E-mail:</label>
+                <input type="email" id="email" class="form-control">
+
+                <label for="game" class="form-label">Game de interesse:</label>
+                <input type="text" class="form-control" id="game">
+
+                <label for="mensagem" class="form-label">Mensagem:</label>
+                <textarea name="" id="mensagem" class="form-control"></textarea>
+
+                <div class="form-check form-switch">
+                  <input type="checkbox" class="form-check-input" id="aceitar-termos">
+                  <label for="aceitar-termos" class="form-check-label">Li e concordo com os termos do site</label>
+                </div>
+
+                <button class="btn btn-success">Enviar</button>
+
+              </form>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </main>
+
+  <!-- Rodapé do site -->
+
+  <footer>
+    <div class=".container">
+      <div class="layout-footer">
+
+
+          <p>2025 &copy;Todos os direitos reservados a Nícolas Iesus</p>
+
+          <a href="https://www.instagram.com/nicolas_iesus/" target="_blank"><img src="./icon/instagram.png" alt="instagram-icone" title="Ir para o Instagram"></a>
+          <a href="https://github.com/NickZI-Dev" target="_blank"><img src="./icon/github-icon.png" alt="github-icone" title="Ir para github"></a>
+
+
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="./lib/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
