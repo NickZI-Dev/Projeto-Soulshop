@@ -1,7 +1,7 @@
 const ativadorToast = document.querySelector('.esgotado');
 const mensagem = document.getElementById('mensagem-toast')
 let soma = 0
-let listaProdutos = ''
+let listaProdutos = ['']
 const produtos = document.querySelector('lista-produto');
 
 if(ativadorToast) {
@@ -14,12 +14,10 @@ if(ativadorToast) {
 
 $('.adicionar').click(function(){
 
-  const produto = ($(this).parent().find('h4').text());
-  let lista = `<li class="dropdown-item">${produto}</li>`
-
+  const produto = $(this).parent().find('h4').text();
+  let lista = `<li class="dropdown-item d-flex justify-content-between">${produto}<button class="btn-close"></button></li>`
   listaProdutos += lista
 
-  console.log(listaProdutos)
   document.querySelector('#lista-produto').innerHTML = listaProdutos
 
   soma += 1

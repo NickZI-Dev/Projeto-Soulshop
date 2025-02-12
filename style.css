@@ -38,6 +38,11 @@ header h1 {
   margin-left: 16px;
 }
 
+.dropdown-item {
+  max-width: 400px;
+  width: 250px;
+}
+
 .sobre {
   margin-top: 20px;
 }
