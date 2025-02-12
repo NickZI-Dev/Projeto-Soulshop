@@ -126,3 +126,7 @@ button a {
   text-decoration: none;
   color: #fff;
 }
+
+form {
+  max-width: 100%;
+}
